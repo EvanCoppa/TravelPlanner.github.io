@@ -26,6 +26,8 @@ function closeNav() {
   }
 }
 
+ let isClicked = [false, false, false, false];
+
 
 function clearSearch() {
    document.getElementById("search").value = "";
@@ -37,6 +39,18 @@ function clearSearch() {
  }
 
  function rotateArrow(num) {
- var arrow = document.getElementById("Arrow " + num);
- arrow.style.transform
+  if(isClicked[parseInt(num - 1)] == false){
+  
+ 
+
+  var arrow = document.getElementById("Arrow " + num);
+ arrow.style.transform = "rotate(90deg)";
+ isClicked[parseInt(num - 1)] = true;
+ }else{
+  var arrow = document.getElementById("Arrow " + num);
+  arrow.style.transform = "rotate(360deg)";
+  isClicked[parseInt(num - 1)] = false;
+
  }
+
+  }
