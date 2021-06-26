@@ -104,6 +104,13 @@ summary {
   color: grey;
 }
 
+svg{
+display: inline-block;
+padding-top: 5px;
+ }
+
+
+
 details p {
   padding: 5px 0 5px 35px;
   font-size: 20px;
@@ -115,6 +122,10 @@ details p::before {
   content: "- ";
   font-size: 20px;
   font-style: bold;
+}
+
+details{
+  margin-bottom: 10px;
 }
 
 .profile_pic {

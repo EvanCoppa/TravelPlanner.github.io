@@ -35,3 +35,8 @@ function clearSearch() {
     document.getElementById("search").value = "Search..";
 
  }
+
+ function rotateArrow(num) {
+ var arrow = document.getElementById("Arrow " + num);
+ arrow.style.transform
+ }
